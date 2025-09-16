@@ -1,0 +1,6 @@
+# 'Prettier' (formatter) was approved by the teacher.
+# This formatter 'only' makes the code prettier. Does not affect code itself.
+
+tabWidth: 4
+useTabs: True
+printWidth: 100
