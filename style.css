@@ -30,6 +30,15 @@ h1 {
 	font-size: 2.2rem;
 }
 
+footer {
+	background-color: var(--blue1);
+	color: whitesmoke;
+}
+
+a {
+	color: var(--blue5);
+}
+
 .spacer {
 	margin: 4rem;
 }
@@ -115,4 +124,95 @@ h1 {
 	padding: 0;
 	margin: 0;
 	text-align: center;
+}
+
+.index-three-by-two {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 0.2fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.circle-images img {
+	width: 100%;
+	clip-path: circle(40%);
+	border-style: solid;
+	border-width: 3.3vw;
+	border-radius: 100%;
+	border-color: var(--blue2);
+	box-sizing: border-box;
+}
+
+.index-links {
+	text-align: center;
+}
+
+.cta {
+	background-color: var(--blue2);
+	height: 200px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	display: flex;
+}
+
+.cta-text {
+	color: whitesmoke;
+	font-family: Vujahday;
+	font-size: 2rem;
+}
+
+.cta-button {
+	background-color: var(--blue3);
+	font-size: 1rem;
+	font-family: Geist;
+	border-radius: 1rem;
+	padding: 1rem;
+	color: whitesmoke;
+	text-align: center;
+	text-decoration: none;
+}
+
+.social {
+	margin-right: 1.5rem;
+}
+
+.geyser-hero-image {
+	background-image: url(images/self_taken_images/geyser_hero.jpeg);
+	background-position: left;
+	background-size: cover;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.three-by-one {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.one-by-two {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.three-by-two {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 0.2fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
 }
