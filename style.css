@@ -216,3 +216,14 @@ a {
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 }
+
+.geothermal-hero-image {
+	background-image: url(images/self_taken_images/geothermal_hero.png);
+	background-position: left;
+	background-size: cover;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
