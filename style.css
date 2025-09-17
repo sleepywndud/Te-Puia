@@ -21,7 +21,7 @@
 }
 
 body {
-	font-family: Geist;
+	font-family: Geist, var(--fallback_fonts);
 	padding: 0;
 	margin: 0;
 }
@@ -80,7 +80,7 @@ a {
 
 .hero-text {
 	color: whitesmoke;
-	font-family: Vujahday;
+	font-family: Vujahday, var(--fallback_fonts);
 	text-align: center;
 	width: 100%;
 	font-size: 8rem;
@@ -109,7 +109,7 @@ a {
 }
 
 .header {
-	font-family: Vujahday;
+	font-family: Vujahday, var(--fallback_fonts);
 	padding: 0;
 	margin: 0;
 }
@@ -120,7 +120,7 @@ a {
 }
 
 .centerheader {
-	font-family: Vujahday;
+	font-family: Vujahday, var(--fallback_fonts);
 	padding: 0;
 	margin: 0;
 	text-align: center;
@@ -161,14 +161,14 @@ a {
 
 .cta-text {
 	color: whitesmoke;
-	font-family: Vujahday;
+	font-family: Vujahday, var(--fallback_fonts);
 	font-size: 2rem;
 }
 
 .cta-button {
 	background-color: var(--blue3);
 	font-size: 1rem;
-	font-family: Geist;
+	font-family: Geist, var(--fallback_fonts);
 	border-radius: 1rem;
 	padding: 1rem;
 	color: whitesmoke;
