@@ -7,3 +7,4 @@ printWidth: 100
 
 plugins:
     - "@awmottaz/prettier-plugin-void-html"
+    # This plugin removes trailing slashes from prettier. Again, does not affect code itself.
