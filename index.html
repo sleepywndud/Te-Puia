@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<title>Te Puia</title>
-		<meta charset="UTF-8" />
-		<link rel="stylesheet" href="style.css" />
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 		<header>
@@ -35,8 +35,8 @@
 						<img
 							src="images/self_taken_images/geyser10-circle.png"
 							alt="Geyser"
-							width="100%"
-						/>
+							class="full-width-image"
+						>
 					</div>
 				</div>
 				<!-- Right side of grid -->
@@ -72,7 +72,7 @@
 				<div class="spacer"></div>
 				<!-- centerheader is a header that is just aligned to the center of the element -->
 				<h1 class="centerheader">
-					Where you can see incredible steaming pools and powerful geysers, <br />
+					Where you can see incredible steaming pools and powerful geysers, <br>
 					and discover the amazing traditions of New Zealand's first people.
 				</h1>
 				<div class="spacer"></div>
@@ -80,10 +80,10 @@
 			<!-- 2nd section ends -->
 
 			<!-- 3rd section (3x2 grid) -->
-			<section class="index-three-by-two">
+			<div class="index-three-by-two">
 				<!-- 
 					The images are located on the 1st~3rd rows, and the mini texts that go below are
-					located on the 4th~6th rows -- 4th~6th rows have a relatively shorter height to 
+					located on the 4th~6th rows: 4th~6th rows have a relatively shorter height to 
 					increase visibility
 
 					The first three divs are images, and the last three divs are the texts
@@ -92,18 +92,22 @@
 					<img
 						src="images/self_taken_images/geyser13.jpeg"
 						alt="image of geyser"
-						width="100%"
-					/>
+						class="full-width-image"
+					>
 				</div>
 				<div class="circle-images">
 					<img
 						src="images/self_taken_images/geothermal8.jpeg"
 						alt="image of the geothermal valley"
-						width="100%"
-					/>
+						class="full-width-image"
+					>
 				</div>
 				<div class="circle-images">
-					<img src="/images/mud_pools.jpeg" alt="image of mudpool" width="100%" />
+					<img
+						src="/images/mud_pools.jpeg"
+						alt="image of mudpool"
+						class="full-width-image"
+					>
 				</div>
 				<div class="index-links">
 					<p>Pohutu Geyser</p>
@@ -119,7 +123,7 @@
 					<a href="mudpools.html">Click here to learn more...</a>
 				</div>
 				<div class="spacer"></div>
-			</section>
+			</div>
 			<!-- 3rd section ends -->
 
 			<!-- Footer -->
@@ -128,15 +132,18 @@
 				<section class="cta">
 					<!-- Call-to-action text -->
 					<div class="cta-text">
-						Plan your Te Puia visit today! <br />
+						<h1>
+							Plan your Te Puia visit today!
+							<br>
+							<a href="https://www.tepuia.com/" class="cta-button" target="_blank"
+								>Book Now!</a
+							>
+						</h1>
 
 						<!-- 
 							Button that the users can click that forwards the user to 
 							Te Puia's official website (for booking purposes)
 						 -->
-						<a href="https://www.tepuia.com/" class="cta-button" target="_blank"
-							>Book Now!</a
-						>
 					</div>
 				</section>
 
@@ -150,14 +157,14 @@
 							<b>Address</b>: Hemo Rd, Tihiotonga, Rotorua 3010, Bay of Plenty, New
 							Zealand
 
-							<br />
+							<br>
 
 							<b>Booking</b>: reservation@tepuia.com | 07 348 9047 |
 							<a href="https://www.tepuia.com/" target="_blank"
 								>https://www.tepuia.com/</a
 							>
 
-							<br />
+							<br>
 
 							<b>Website Inquiries</b>: 22222w@duck.com
 						</p>
@@ -170,20 +177,25 @@
 							href="https://www.facebook.com/tepuia.rotorua.nz/"
 							target="_blank"
 							class="social"
-							><img src="icons/facebook.png" alt="facebook icon" width="40vw"
-						/></a>
+						>
+							<img src="icons/facebook.png" alt="facebook icon" width="40">
+						</a>
+
 						<a
 							href="https://www.youtube.com/channel/UCsmZvq3uW5Fuk9iyGkIeQlA"
 							target="_blank"
 							class="social"
-							><img src="icons/youtube.png" alt="youtube icon" width="40vw"
-						/></a>
-						<a href="https://x.com/Te_Puia" target="_blank" class="social"
-							><img src="icons/x-twitter.png" alt="x (twitter) icon" width="40vw"
-						/></a>
-						<a href="https://www.instagram.com/te_puia/" target="_blank" class="social"
-							><img src="icons/instagram.png" alt="instagram icon" width="40vw"
-						/></a>
+						>
+							<img src="icons/youtube.png" alt="youtube icon" width="40">
+						</a>
+
+						<a href="https://x.com/Te_Puia" target="_blank" class="social">
+							<img src="icons/x-twitter.png" alt="x (twitter) icon" width="40">
+						</a>
+
+						<a href="https://www.instagram.com/te_puia/" target="_blank" class="social">
+							<img src="icons/instagram.png" alt="instagram icon" width="40">
+						</a>
 					</div>
 				</section>
 			</footer>

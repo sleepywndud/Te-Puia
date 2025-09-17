@@ -4,3 +4,6 @@
 tabWidth: 4
 useTabs: True
 printWidth: 100
+
+plugins:
+    - "@awmottaz/prettier-plugin-void-html"

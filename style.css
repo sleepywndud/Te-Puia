@@ -51,6 +51,10 @@ video {
 	object-fit: contain;
 }
 
+.full-width-image {
+	width: 100%;
+}
+
 b {
 	font-family: GeistBlack;
 	color: var(--blue4);
@@ -271,9 +275,15 @@ b {
 /* Icons */
 .social {
 	margin-right: 1.5rem;
+	text-decoration: none;
 }
 
 .centericons {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+/* Mudpool video */
+.mudpoolvideo {
+	width: 80%;
 }
