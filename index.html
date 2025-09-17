@@ -9,26 +9,38 @@
 		<header>
 			<!-- Navbar -->
 			<nav class="navbar">
+				<!-- Located on the left of navbar-->
 				<a href="index.html" class="home-link">Home</a>
+				<!-- Other content (inside <div>) located on the right of navbar -->
 				<div>
 					<a href="pohutu_geyser.html" class="nav-link">Pohutu Geyser</a>
 					<a href="geothermal_valleys.html" class="nav-link">Geothermal Valleys</a>
 					<a href="mudpools.html" class="nav-link" style="margin-right: 2vw">Mudpools</a>
 				</div>
 			</nav>
+			<!-- Navbar ends -->
 		</header>
 		<main>
+			<!-- Hero image -->
 			<section class="index-hero-image">
+				<!-- Hero text -->
 				<h1 class="hero-text">Te Puia</h1>
 			</section>
+
+			<!-- 1st section (2x1 grid) -->
 			<section class="two-by-one">
 				<!-- Left side of grid -->
 				<div class="container">
 					<img src="images/self_taken_images/geyser10.jpeg" alt="Geyser" width="100%" />
 				</div>
 				<!-- Right side of grid -->
+				<!-- 
+					`centercontainer` class is a table, and the vertical center class is a 
+					cell in the table that is in the middle of the table 
+				-->
 				<div class="centercontainer">
 					<div class="verticalcenter">
+						<!-- Header to differentiate from other texts -->
 						<h1 class="header">Rotorua's famous geysers and Māori heritage..</h1>
 						<p>
 							Rotorua's famous geysers and Māori heritage make Te Puia a special place
@@ -43,17 +55,33 @@
 					</div>
 				</div>
 			</section>
+			<!-- 1st section ends -->
 
+			<!-- 2nd section -->
 			<section>
+				<!-- 
+					Spacer is an invisible 'gap' that increases visibility by s
+					eparating the contents on the top and bottom 
+				 -->
 				<div class="spacer"></div>
+				<!-- centerheader is a header that is just aligned to the center of the element -->
 				<h1 class="centerheader">
 					Where you can see incredible steaming pools and powerful geysers, <br />
 					and discover the amazing traditions of New Zealand's first people.
 				</h1>
 				<div class="spacer"></div>
 			</section>
+			<!-- 2nd section ends -->
 
+			<!-- 3rd section (3x2 grid) -->
 			<section class="index-three-by-two">
+				<!-- 
+					The images are located on the 1st~3rd rows, and the mini texts that go below are
+					located on the 4th~6th rows -- 4th~6th rows have a relatively shorter height to 
+					increase visibility
+
+					The first three divs are images, and the last three divs are the texts
+				-->
 				<div class="circle-images">
 					<img
 						src="images/self_taken_images/geyser13.jpeg"
@@ -73,6 +101,7 @@
 				</div>
 				<div class="index-links">
 					<p>Pohutu Geyser</p>
+					<!-- Links that forward to the pages -->
 					<a href="pohutu_geyser.html">Click here to learn more...</a>
 				</div>
 				<div class="index-links">
@@ -85,21 +114,32 @@
 				</div>
 				<div class="spacer"></div>
 			</section>
+			<!-- 3rd section ends -->
 
+			<!-- Footer -->
 			<footer>
+				<!-- Call-to-action section (index only) -->
 				<section class="cta">
+					<!-- Call-to-action text -->
 					<div class="cta-text">
 						Plan your Te Puia visit today! <br />
 
+						<!-- 
+							Button that the users can click that forwards the user to 
+							Te Puia's official website (for booking purposes)
+						 -->
 						<a href="https://www.tepuia.com/" class="cta-button" target="_blank"
 							>Book Now!</a
 						>
 					</div>
 				</section>
 
+				<!-- Footer (2x1 grid) -->
 				<section class="two-by-one">
+					<!-- Left side of grid -->
 					<div class="container">
 						<h1 class="header">Information</h1>
+						<!-- All required information for bookings, etc.. -->
 						<p>
 							<b>Address</b>: Hemo Rd, Tihiotonga, Rotorua 3010, Bay of Plenty, New
 							Zealand
@@ -116,8 +156,10 @@
 							<b>Website Inquiries</b>: 22222w@duck.com
 						</p>
 					</div>
+					<!-- Right side of grid -->
 					<div class="container">
 						<h1 class="header">Socials</h1>
+						<!-- Te Puia's socials in icon form which the users can click -->
 						<a
 							href="https://www.facebook.com/tepuia.rotorua.nz/"
 							target="_blank"
@@ -139,6 +181,7 @@
 					</div>
 				</section>
 			</footer>
+			<!-- Footer ends -->
 		</main>
 	</body>
 </html>

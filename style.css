@@ -227,3 +227,22 @@ a {
 	align-items: center;
 	position: relative;
 }
+
+.two-by-two {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.mudpool-hero-image {
+	background-image: url(images/self_taken_images/mudpool_hero.png);
+	background-position: left;
+	background-size: cover;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
