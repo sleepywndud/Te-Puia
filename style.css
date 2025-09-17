@@ -5,11 +5,16 @@
 }
 
 @font-face {
+	font-family: GeistBlack;
+	src: url(fonts/geist/Geist-Black.ttf);
+}
+
+@font-face {
 	font-family: Vujahday;
 	src: url(fonts/VujahdayScript-Regular.ttf);
 }
 
-/* Set palette and other defaults at :root */
+/* Root palette and defaults */
 :root {
 	--blue1: #042241;
 	--blue2: #133955;
@@ -20,6 +25,7 @@
 	--fallback_fonts: arial, sans-serif, serif;
 }
 
+/* Base elements */
 body {
 	font-family: Geist, var(--fallback_fonts);
 	padding: 0;
@@ -39,10 +45,24 @@ a {
 	color: var(--blue5);
 }
 
+img,
+video {
+	border-radius: 1rem;
+	object-fit: contain;
+}
+
+b {
+	font-family: GeistBlack;
+	color: var(--blue4);
+	font-size: larger;
+}
+
+/* Spacing class (used to separate contents) */
 .spacer {
 	margin: 4rem;
 }
 
+/* Navbar */
 .navbar {
 	display: flex;
 	align-items: center;
@@ -67,6 +87,12 @@ a {
 	color: whitesmoke;
 }
 
+/* Index page links (link under the circle images) */
+.index-links {
+	text-align: center;
+}
+
+/* Hero image */
 .index-hero-image {
 	background-image: url(images/self_taken_images/main_hero-image.png);
 	background-position: left;
@@ -78,6 +104,40 @@ a {
 	position: relative;
 }
 
+.geyser-hero-image {
+	background-image: url(images/self_taken_images/geyser_hero.jpeg);
+	background-position: left;
+	background-size: cover;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.geothermal-hero-image {
+	background-image: url(images/self_taken_images/geothermal_hero.png);
+	background-position: left;
+	background-size: cover;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.mudpool-hero-image {
+	background-image: url(images/self_taken_images/mudpool_hero.png);
+	background-position: left;
+	background-size: cover;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+/* Hero text */
 .hero-text {
 	color: whitesmoke;
 	font-family: Vujahday, var(--fallback_fonts);
@@ -86,6 +146,8 @@ a {
 	font-size: 8rem;
 }
 
+/* Grid layouts */
+/* 2x1 grid */
 .two-by-one {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -94,6 +156,46 @@ a {
 	grid-row-gap: 0px;
 }
 
+/* 3x1 grid */
+.three-by-one {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+/* 1x2 grid */
+.one-by-two {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+/* 3x2 grid for index and geyser pages */
+.index-three-by-two,
+.three-by-two {
+	width: 80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: 1fr 0.2fr;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+/* 2x2 grid for geothermal valleys */
+.two-by-two {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+/* Centering */
 .centercontainer {
 	display: table;
 	height: 100%;
@@ -108,15 +210,11 @@ a {
 	line-height: 2;
 }
 
+/* Headers */
 .header {
 	font-family: Vujahday, var(--fallback_fonts);
 	padding: 0;
 	margin: 0;
-}
-
-.container {
-	padding: 2rem;
-	line-height: 2;
 }
 
 .centerheader {
@@ -126,16 +224,13 @@ a {
 	text-align: center;
 }
 
-.index-three-by-two {
-	width: 80%;
-	margin: auto;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 1fr 0.2fr;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
+/* Containers and dividers */
+.container {
+	padding: 2rem;
+	line-height: 2;
 }
 
+/* Circular images */
 .circle-images img {
 	width: 100%;
 	clip-path: circle(40%);
@@ -146,10 +241,7 @@ a {
 	box-sizing: border-box;
 }
 
-.index-links {
-	text-align: center;
-}
-
+/* Call-to-action section */
 .cta {
 	background-color: var(--blue2);
 	height: 200px;
@@ -176,73 +268,12 @@ a {
 	text-decoration: none;
 }
 
+/* Icons */
 .social {
 	margin-right: 1.5rem;
 }
 
-.geyser-hero-image {
-	background-image: url(images/self_taken_images/geyser_hero.jpeg);
-	background-position: left;
-	background-size: cover;
-	height: 600px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-}
-
-.three-by-one {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 1fr;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-}
-
-.one-by-two {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-}
-
-.three-by-two {
-	width: 80%;
-	margin: auto;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 1fr 0.2fr;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-}
-
-.geothermal-hero-image {
-	background-image: url(images/self_taken_images/geothermal_hero.png);
-	background-position: left;
-	background-size: cover;
-	height: 600px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-}
-
-.two-by-two {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-}
-
-.mudpool-hero-image {
-	background-image: url(images/self_taken_images/mudpool_hero.png);
-	background-position: left;
-	background-size: cover;
-	height: 600px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
+.centericons {
+	margin-left: auto;
+	margin-right: auto;
 }
