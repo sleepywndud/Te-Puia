@@ -1,20 +1,23 @@
 /* Font importing */
 @font-face {
 	font-family: Geist;
+	/* Path to the font file */
 	src: url(fonts/geist/Geist-Regular.ttf);
 }
 
 @font-face {
 	font-family: GeistBlack;
+	/* Path to the font file */
 	src: url(fonts/geist/Geist-Black.ttf);
 }
 
 @font-face {
 	font-family: Vujahday;
+	/* Path to the font file */
 	src: url(fonts/VujahdayScript-Regular.ttf);
 }
 
-/* Root palette and defaults */
+/* Global CSS variables */
 :root {
 	--blue1: #042241;
 	--blue2: #133955;
@@ -22,12 +25,16 @@
 	--blue4: #2d687c;
 	--blue5: #529cb5;
 
+	/* Fallback fonts */
 	--fallback_fonts: arial, sans-serif, serif;
 }
 
 /* Base elements */
 body {
+	/* Default fonts */
 	font-family: Geist, var(--fallback_fonts);
+
+	/* Removes default padding & margin */
 	padding: 0;
 	margin: 0;
 }
@@ -52,36 +59,48 @@ a {
 
 img,
 video {
+	/* Corner rounding */
 	border-radius: 1rem;
+
+	/* Ensures the content of the element is contained within its container */
 	object-fit: contain;
 }
 
-.full-width-image {
-	width: 100%;
-}
-
 b {
+	/* Bold text styles */
 	font-family: GeistBlack;
 	color: var(--blue4);
 	font-size: larger;
 }
 
-/* Spacing class (used to separate contents) */
 .spacer {
+	/* Adds 4rem worth of new lines when added */
+	/* Example use: <div class="spacer"></div> */
 	margin: 4rem;
+}
+
+.full-width-image {
+	/* Makes the image extend 100% across its container */
+	width: 100%;
 }
 
 /* Navbar */
 .navbar {
-	display: flex;
-	align-items: center;
-	padding: 1rem;
+	/* Ensures the navbar is on top of other elements */
+	z-index: 2222;
+
+	/* Makes it so that the home link and nav links are separated */
+	justify-content: space-between;
+
+	/* Fixes the navbar's position at the top of the page */
 	position: fixed;
+
 	width: 100%;
 	background-color: var(--blue1);
 	opacity: 80%;
-	z-index: 2222;
-	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
 }
 
 .home-link {
@@ -103,47 +122,62 @@ b {
 
 /* Hero image */
 .index-hero-image {
+	/* Aligns the background image to the center */
+	background-position: center;
+
+	/* Scales the background image to cover the entire container */
+	background-size: cover;
+
 	background-image: url(images/self_taken_images/main_hero-image.png);
-	background-position: left;
-	background-size: cover;
 	height: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 }
 
+/* Styles for the hero image on the geyser page */
 .geyser-hero-image {
+	/* Aligns the background image to the center */
+	background-position: center;
+
+	/* Scales the background image to cover the entire container */
+	background-size: cover;
+
 	background-image: url(images/self_taken_images/geyser_hero.jpeg);
-	background-position: left;
-	background-size: cover;
 	height: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 }
 
+/* Styles for the hero image on the geothermal page */
 .geothermal-hero-image {
-	background-image: url(images/self_taken_images/geothermal_hero.png);
-	background-position: left;
+	/* Aligns the background image to the center */
+	background-position: center;
+
+	/* Scales the background image to cover the entire container */
 	background-size: cover;
+
+	background-image: url(images/self_taken_images/geothermal_hero.png);
 	height: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 }
 
+/* Styles for the hero image on the mudpool page */
 .mudpool-hero-image {
-	background-image: url(images/self_taken_images/mudpool_hero.png);
-	background-position: left;
+	/* Aligns the background image to the center */
+	background-position: center;
+
+	/* Scales the background image to cover the entire container */
 	background-size: cover;
+
+	background-image: url(images/self_taken_images/mudpool_hero.png);
 	height: 600px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: relative;
 }
 
 /* Hero text */
@@ -206,15 +240,19 @@ b {
 
 /* Centering */
 .centercontainer {
-	display: table;
+	/* Height & width to 100% of its container */
 	height: 100%;
 	width: 100%;
 	text-align: center;
+
+	display: table;
 }
 
 .verticalcenter {
-	display: table-cell;
+	/* Aligns content vertically to the middle */
 	vertical-align: middle;
+
+	display: table-cell;
 	padding: 2rem;
 	line-height: 2;
 }
@@ -226,6 +264,7 @@ b {
 	margin: 0;
 }
 
+/* Styles for centered header elements */
 .centerheader {
 	font-family: Vujahday, var(--fallback_fonts);
 	padding: 0;
@@ -242,12 +281,19 @@ b {
 /* Circular images */
 .circle-images img {
 	width: 100%;
+
+	/* Clips the image into a circle */
 	clip-path: circle(40%);
+
+	/* Border radius to 100% to make circle borders */
+	border-radius: 100%;
+
+	/* Includes padding and border in the element's total width and height */
+	box-sizing: border-box;
+
 	border-style: solid;
 	border-width: 3.3vw;
-	border-radius: 100%;
 	border-color: var(--blue2);
-	box-sizing: border-box;
 }
 
 /* Call-to-action section */
@@ -260,12 +306,14 @@ b {
 	display: flex;
 }
 
+/* Styles for the text in the call-to-action section */
 .cta-text {
 	color: whitesmoke;
 	font-family: Vujahday, var(--fallback_fonts);
 	font-size: 2rem;
 }
 
+/* Styles for the button in the call-to-action section */
 .cta-button {
 	background-color: var(--blue3);
 	font-size: 1rem;
@@ -283,6 +331,7 @@ b {
 	text-decoration: none;
 }
 
+/* Class for centering icons */
 .centericons {
 	margin-left: auto;
 	margin-right: auto;
